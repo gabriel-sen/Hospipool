@@ -126,13 +126,20 @@
                 </h2>
                 <form>
                     <div class="form-group">
-                        <label for="exampleInputEmail1">Adresse mail</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                        <label for="mail">Adresse mail</label>
+                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
                             placeholder="Ton mail">
                         <small id="emailHelp" class="form-text text-muted">Je n'utiliserais pas ton mail pour quoi que ce soit d'autre que te répondre</small>
+
+                        <label for="objet">Objet</label>
+                        <input type="email" class="form-control" id="objet" aria-describedby="emailHelp"
+                                placeholder="Un petit titre à ton message?">
+                                <small id="emailHelp" class="form-text text-muted">Ou un mot doux</small>
                         <label for="exampleFormControlTextarea1">Ton gentil message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                        <button type="submit" class="btn btn-primary">Envoyer le message</button>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Par exemple : Je suis secrêtement amoureuse de toi Deadpool, je te trouve beaucoup plus beau que Captain america..."></textarea>
+                        <button type="submit" class="btn btn-primary btn-disabled">Envoyer ton message </button>
+                        <small id="emailHelp" class="form-text text-muted">(Le formulaire n'est pas encore dispo, utilise Facebook, ou Insta pour me contacter, plus bas dans le Footer)</small>
+                        
                     </div>
                 </form>
             </div>
