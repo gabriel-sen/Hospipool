@@ -138,19 +138,22 @@ h6,
     margin-top:-7rem;
 }
 
+.background_video .video iframe {
+    width: 99.4vw;
+    height: 65vh
+}
 .background_video{
-    background: $grismoyen;
-    width: 100%;
     .video{
         margin: 0 auto;
-        width:1280px;
         margin-top:5rem;
-        @media (min-width: 1200px){
-        iframe{
-            width:1110px;
-            }
-        }
     }
+}
+
+.section_concept_img{
+    background-image:url("../img/conceptimg.jpg");
+    background-position:center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 
@@ -163,6 +166,8 @@ h6,
 .section_concept{
     display: flex;
     align-items: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
 }
 
 .section_concept_img,
@@ -193,11 +198,44 @@ h6,
         margin-left: 0 auto;
         display:inline-block;
     }
+
+    .button{
+        border-radius:0.5rem;
+        color:$blanc;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 1rem;
+        letter-spacing: .1rem;
+        text-align: center;
+        box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
+        border: 0;
+        background-color: $rougemoyen;
+        display:inline-block;
+    }
+    .container_logo_leetchi,
+    .button{
+        margin-bottom: 2rem;
+        transition: $transition;
+    }
+    .logo_leetchi{
+        width: 20%;
+        display:inline-block;
+    }
+    .button:hover{
+        box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .5);
+        background-color: lighten( $rougemoyen, 10% ) ;
+        text-decoration: none;
+    }
+    
+
 }
 
 
 
 .section_dons--sans-img{
+   
+
     .section_dons--center{
         text-align: center;
     }
@@ -224,33 +262,6 @@ h6,
     color:$grismoyen;
 }
 
-.button{
-    border-radius:0.5rem;
-    color:$grismoyen;
-    font-family: sans-serif;
-    font-weight: bold;
-    padding: 1rem;
-    font-size: 1rem;
-    letter-spacing: .1rem;
-    text-align: center;
-    box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
-    border: 0;
-    background-color: $leetchi;
-    display:inline-block;
-}
-.container_logo_leetchi,
-.button{
-    margin-bottom: 2rem;
-    transition: $transition;
-}
-.logo_leetchi{
-    width: 20%;
-    display:inline-block;
-}
-.button:hover{
-    box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .5);
-    background-color: lighten( $leetchi, 10% ) ;
-}
 
 
 
@@ -410,18 +421,9 @@ footer{
 //  ------ responsive -----
 
 
-@media (max-width: 1200px){
-    .background_video .video iframe {
-        width: 960px;
-    }
-    .background_video .video{
-        width:100%;
-    }
-}
+
 @media (max-width: 992px){
-    .background_video .video iframe {
-        width: 690px;
-    }
+
     footer{
         height: 45rem;
     }
@@ -429,14 +431,9 @@ footer{
         width: 98%;
         overflow: hidden;
     }
-    .background_video .video{
-        width:100%;
-    }
+
 }
 @media (max-width: 767px){
-    .background_video .video iframe {
-        width: 510px;
-    }
     .section_contact_img:before {
         display:none;
     }
@@ -460,13 +457,12 @@ footer{
     .footer_title{
         margin-top:3rem;
     }
-    .background_video .video{
-        background-color: transparent;
-    }
-    .section_concept_img img{
+
+    .section_concept_img{
         width:100%;
     }
 }
+
 
 .thanks{
     font-family: 'Six Caps', sans-serif;
