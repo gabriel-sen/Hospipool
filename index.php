@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -125,22 +124,20 @@
                 <h2>
                     Envoie moi un message (Le formulaire ne fonctionne pas pour le moment)
                 </h2>
-                <form>
+                <form method="POST" action="mailer.php">
                     <div class="form-group">
+                        <label for="name">Ton joli nom</label>
+                        <input name="name" type="name" class="form-control" id="name" aria-describedby="emailHelp" placeholder="Thanos ou Thables ou ... Cablos ?">
                         <label for="mail">Adresse mail</label>
-                        <input type="email" class="form-control" id="mail" aria-describedby="emailHelp"
-                            placeholder="Ton mail">
+                        <input name="mail" type="email" class="form-control" id="mail" aria-describedby="emailHelp" placeholder="Ton mail">
                         <small id="emailHelp" class="form-text text-muted">Je n'utiliserais pas ton mail pour quoi que ce soit d'autre que te répondre</small>
-
-                        <label for="objet">Objet</label>
-                        <input type="email" class="form-control" id="objet" aria-describedby="emailHelp"
-                                placeholder="Un petit titre à ton message?">
-                                <small id="emailHelp" class="form-text text-muted">Ou un mot doux</small>
+                        <label for="object">Objet</label>
+                        <input name="object" type="text" class="form-control" id="object" aria-describedby="emailHelp" placeholder="Un petit titre à ton message?">
+                        <small id="emailHelp" class="form-text text-muted">Ou un mot doux</small>
                         <label for="exampleFormControlTextarea1">Ton gentil message</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Par exemple : Je suis secrétement amoureuse de toi Deadpool, je te trouve beaucoup plus beau que Captain america..."></textarea>
+                        <textarea name="message" class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Par exemple : Je suis secrètement amoureuse de toi Deadpool, je te trouve beaucoup plus beau que Captain america..."></textarea>
                         <button type="submit" class="btn btn-primary btn-disabled">Envoyer ton message </button>
                         <small id="emailHelp" class="form-text text-muted">(Le formulaire n'est pas encore dispo, utilise Facebook, ou Insta pour me contacter, plus bas dans le Footer)</small>
-                        
                     </div>
                 </form>
             </div>
