@@ -22,7 +22,7 @@ $mailer = new Swift_Mailer($transport);
 $message = (new Swift_Message('[Hospipool message] '.$object))
     ->setFrom($from)
     ->setTo('deadpool.hospipool@gmail.com')
-    ->setBody('message de '. $name . '(' . $from . ') : ' . $message)
+    ->setBody('message de '. $name . ' (' . $from . ') : ' . $message)
 ;
 
 
