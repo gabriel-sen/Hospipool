@@ -143,7 +143,7 @@
                 </form>
             </div>
         </section>
-    </div>
+    </div> 
 
 
     <footer>
