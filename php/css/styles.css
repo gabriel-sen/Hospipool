@@ -1,0 +1,348 @@
+html {
+  scroll-behavior: smooth; }
+
+body {
+  font-size: 16px;
+  background: #13171B; }
+
+ul {
+  padding-left: .5rem; }
+  ul li {
+    list-style: none; }
+
+h1,
+.h1 {
+  font-size: 3.125rem;
+  font-family: "rogue";
+  letter-spacing: .1rem; }
+
+h2,
+.h2 {
+  font-size: 3.125rem;
+  font-family: "rogue";
+  color: #962333; }
+
+h3,
+.h3 {
+  font-size: 2rem;
+  font-family: "rogue"; }
+
+h4,
+.h4 {
+  font-size: 2rem;
+  font-family: "rogue"; }
+
+h5,
+.h5 {
+  font-size: 2rem;
+  font-family: "rogue"; }
+
+h6,
+.h6 {
+  font-size: 2rem;
+  font-family: "rogue"; }
+
+.constainer--background {
+  background: #13171B; }
+
+.navbar {
+  margin-top: -5rem;
+  width: 100%;
+  position: fixed;
+  z-index: 1000000;
+  display: flex;
+  align-items: center;
+  box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.5);
+  background-color: #13171B; }
+  .navbar .navbar-nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-around; }
+  .navbar .navbar-toggler {
+    color: #F7F7F7; }
+  .navbar .navbar-brand {
+    width: 20rem; }
+  .navbar .nav-item {
+    font-family: "rogue";
+    list-style: none;
+    display: inline-block;
+    font-size: 1.25rem; }
+    .navbar .nav-item a {
+      color: #F7F7F7;
+      letter-spacing: .1rem;
+      text-decoration: none;
+      transition: 0.3s; }
+    .navbar .nav-item a:hover,
+    .navbar .nav-item a:focus {
+      color: #A32633; }
+
+.margin-top {
+  margin-top: 7rem; }
+
+.navbar--sans-marge-sup {
+  margin-top: -7rem; }
+
+.background_video .video iframe {
+  width: 99.4vw;
+  height: 65vh; }
+
+.background_video .video {
+  margin: 0 auto;
+  margin-top: 5rem; }
+
+.section_concept_img {
+  background-image: url("../img/conceptimg.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+
+.section {
+  background: #F7F7F7;
+  border-radius: .5rem;
+  padding: 1rem; }
+
+.section_concept {
+  display: flex;
+  align-items: start;
+  padding-left: 2rem;
+  padding-right: 2rem; }
+
+.section_concept_img,
+.section_concept_txt {
+  width: 98%;
+  overflow: hidden; }
+
+.section_actu,
+.section_concept,
+.section_contact {
+  margin-top: 3rem; }
+
+.section_dons {
+  position: relative;
+  margin-top: 18rem; }
+  .section_dons .section_dons--center {
+    text-align: center; }
+  .section_dons:before {
+    content: url(../img/deadpool.png);
+    top: -17.4rem;
+    position: absolute; }
+  .section_dons .p--width {
+    width: 60%;
+    margin-left: 0 auto;
+    display: inline-block; }
+  .section_dons .button {
+    border-radius: 0.5rem;
+    color: #F7F7F7;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    padding: 1rem;
+    letter-spacing: .1rem;
+    text-align: center;
+    box-shadow: 0 0.2rem 0.5rem rgba(0, 0, 0, 0.5);
+    border: 0;
+    background-color: #962333;
+    display: inline-block; }
+  .section_dons .container_logo_leetchi,
+  .section_dons .button {
+    margin-bottom: 2rem;
+    transition: 0.3s; }
+  .section_dons .logo_leetchi {
+    width: 20%;
+    display: inline-block; }
+  .section_dons .button:hover {
+    box-shadow: 0 0.5rem 0.6rem rgba(0, 0, 0, 0.5);
+    background-color: #bf2d41;
+    text-decoration: none; }
+
+.section_dons--sans-img .section_dons--center {
+  text-align: center; }
+.section_dons--sans-img:before {
+  content: " "; }
+.section_dons--sans-img .p--width {
+  width: 60%;
+  margin-left: 0 auto;
+  display: inline-block; }
+
+.h3--color-dark,
+.h4--color-dark {
+  color: #20252C; }
+
+.solde_dons {
+  font-size: 7.5rem;
+  font-family: "rogue";
+  color: #962333; }
+
+.solde_dons--color-dark {
+  color: #20252C; }
+
+.section_concept,
+.section_actu,
+.section_dons,
+.section_contact {
+  position: relative; }
+  .section_concept #concept,
+  .section_concept #actu,
+  .section_concept #dons,
+  .section_concept #contact,
+  .section_actu #concept,
+  .section_actu #actu,
+  .section_actu #dons,
+  .section_actu #contact,
+  .section_dons #concept,
+  .section_dons #actu,
+  .section_dons #dons,
+  .section_dons #contact,
+  .section_contact #concept,
+  .section_contact #actu,
+  .section_contact #dons,
+  .section_contact #contact {
+    position: absolute;
+    top: -100px; }
+
+.referral {
+  display: none !important; }
+
+.contact_placement {
+  margin-left: 22rem; }
+
+.section_contact_img {
+  position: relative; }
+  .section_contact_img:before {
+    content: url(../img/deadpool_sit.png);
+    bottom: -14.7rem;
+    position: absolute;
+    margin-left: 0rem; }
+
+.btn-primary {
+  background: #962333;
+  border: none;
+  margin-top: 1rem; }
+
+.btn-primary:hover {
+  background: #bf2d41; }
+
+.btn-primary:focus {
+  background: #6d1925; }
+
+input.form-control,
+textarea.form-control {
+  border-color: #962333; }
+
+input.form-control:active,
+input.form-control:focus,
+textarea.form-control:active,
+textarea.form-control:focus {
+  border-color: #962333; }
+
+footer {
+  background-color: #0F0F0F;
+  margin-top: 10rem; }
+  footer .container {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    display: flex;
+    justify-content: space-between; }
+    footer .container .footer_logo {
+      display: inline-block; }
+    footer .container .footer_title h2 {
+      color: #F7F7F7; }
+    footer .container .footer_subtitle h2 {
+      color: #13171B; }
+    footer .container .footer_reseaux {
+      height: 5rem;
+      width: 100%; }
+      footer .container .footer_reseaux ul {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 3rem; }
+        footer .container .footer_reseaux ul li {
+          list-style: none;
+          display: inline-block; }
+          footer .container .footer_reseaux ul li a {
+            text-decoration: none;
+            color: #F7F7F7;
+            transition: 0.3s;
+            font-weight: bold; }
+          footer .container .footer_reseaux ul li a:hover {
+            color: #A32633; }
+          footer .container .footer_reseaux ul li .footer_facebook:before {
+            margin: 0 auto;
+            content: url(../img/fb.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_facebook:hover:before,
+          footer .container .footer_reseaux ul li .footer_facebook:focus:before {
+            content: url(../img/fb_red.svg); }
+          footer .container .footer_reseaux ul li .footer_twitter:before {
+            margin: 0 auto;
+            content: url(../img/tw.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_twitter:hover:before,
+          footer .container .footer_reseaux ul li .footer_twitter:focus:before {
+            content: url(../img/tw_red.svg); }
+          footer .container .footer_reseaux ul li .footer_instagram:before {
+            margin: 0 auto;
+            content: url(../img/insta.svg);
+            display: block;
+            width: 3rem;
+            transition: 0.3s; }
+          footer .container .footer_reseaux ul li .footer_instagram:hover:before,
+          footer .container .footer_reseaux ul li .footer_instagram:focus:before {
+            content: url(../img/insta_red.svg); }
+
+@media (max-width: 992px) {
+  footer {
+    height: 45rem; }
+
+  .section_dons:before {
+    width: 98%;
+    overflow: hidden; } }
+@media (max-width: 767px) {
+  .section_contact_img:before {
+    display: none; }
+
+  .contact_placement {
+    margin-left: 0 !important; }
+
+  .section_dons:before {
+    width: 98%;
+    overflow: hidden; }
+
+  footer .container {
+    display: block !important;
+    text-align: center; }
+
+  footer {
+    height: 70rem; }
+
+  .thanks {
+    margin-top: 2rem; }
+
+  .footer_title {
+    margin-top: 3rem; }
+
+  .section_concept_img {
+    width: 100%; } }
+.thanks {
+  font-family: 'Six Caps', sans-serif;
+  color: #F7F7F7;
+  text-align: center;
+  width: 100%; }
+  .thanks span {
+    font-size: 1.5rem;
+    color: #fff; }
+  .thanks p,
+  .thanks a {
+    font-size: 3rem;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    letter-spacing: 0.2rem;
+    display: inline-block; }
+  .thanks a {
+    color: #962333; }
+
+/*# sourceMappingURL=styles.css.map */

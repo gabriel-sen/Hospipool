@@ -1,0 +1,488 @@
+// Variables
+$basefontsize: 16px;
+
+
+//couleurs
+$noir: #0F0F0F;
+$blanc: #F7F7F7;
+$grissombre: #13171B;
+$grismoyen: #20252C;
+$gris: #343339;
+$rougevif: #A32633;
+$rougemoyen: #962333;
+$rougefonce: #60252C;
+$leetchi: #a7d328;
+
+
+// Bases
+$deadpoolfont: 'rogue';
+$transition:0.3s;
+
+$nav-item: 1.25rem;
+$font-size-h1: 3.125rem;
+$font-size-h2: 3.125rem;
+$font-size-h3: 2rem;
+$font-size-h4: 2rem;
+$font-size-h5: 2rem;
+$font-size-h6: 2rem;
+
+
+
+
+html {
+    scroll-behavior: smooth;
+  }
+
+body{
+    font-size:$basefontsize;
+    background: $grissombre;
+    
+}
+
+ul{
+    padding-left:.5rem;
+    li{
+        list-style: none;
+    }
+} 
+
+
+// Titres
+h1,
+.h1{
+    font-size: $font-size-h1;
+    font-family: $deadpoolfont;
+    letter-spacing: .1rem;
+}
+
+h2,
+.h2{
+    font-size: $font-size-h2;
+    font-family: $deadpoolfont;
+    color:$rougemoyen;
+}
+
+h3,
+.h3{
+    font-size: $font-size-h3;
+    font-family: $deadpoolfont;
+}
+
+h4,
+.h4{
+    font-size: $font-size-h4;
+    font-family: $deadpoolfont;
+}
+
+h5,
+.h5{
+    font-size: $font-size-h5;
+    font-family: $deadpoolfont;
+}
+
+h6,
+.h6 {
+    font-size: $font-size-h6;
+    font-family: $deadpoolfont;
+}
+
+// titres
+
+// ------- NAVIGATION --------//
+.constainer--background{
+    background: $grissombre;
+}
+
+.navbar{
+    margin-top:-5rem;
+    width: 100%;
+    position: fixed;
+    z-index:1000000;
+    display:flex;
+    align-items: center;
+    box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .5);
+    .navbar-nav{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+    }
+    .navbar-toggler{
+        color:$blanc;
+    }
+    background-color: $grissombre;
+    .navbar-brand{
+        width:20rem;
+    }
+    .nav-item{
+        font-family: $deadpoolfont;
+        list-style: none;
+        display: inline-block;
+        font-size: $nav-item;
+        a{
+            color: $blanc;
+            letter-spacing: .1rem;
+            text-decoration: none;
+            transition: $transition;
+        }
+        a:hover,
+        a:focus{
+            color: $rougevif;
+        }
+    }
+}
+
+.margin-top{
+    margin-top:7rem;
+}
+.navbar--sans-marge-sup{
+    margin-top:-7rem;
+}
+
+.background_video .video iframe {
+    width: 99.4vw;
+    height: 65vh
+}
+.background_video{
+    .video{
+        margin: 0 auto;
+        margin-top:5rem;
+    }
+}
+
+.section_concept_img{
+    background-image:url("../img/conceptimg.jpg");
+    background-position:center center; 
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+.section{
+    background: $blanc;
+    border-radius: .5rem;
+    padding: 1rem;
+}
+
+.section_concept{
+    display: flex;
+    align-items: start;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.section_concept_img,
+.section_concept_txt{
+    width: 98%;
+    overflow: hidden;
+}
+
+.section_actu,
+.section_concept,
+.section_contact{
+    margin-top:3rem;
+}
+
+.section_dons{
+    position: relative;
+    margin-top: 18rem;
+    .section_dons--center{
+        text-align: center;
+    }
+    &:before{
+        content:url(../img/deadpool.png);
+        top: -17.4rem;
+        position: absolute;
+    }
+    .p--width{
+        width: 60%;
+        margin-left: 0 auto;
+        display:inline-block;
+    }
+
+    .button{
+        border-radius:0.5rem;
+        color:$blanc;
+        font-family: sans-serif;
+        font-weight: bold;
+        font-size: 1.5rem;
+        padding: 1rem;
+        letter-spacing: .1rem;
+        text-align: center;
+        box-shadow: 0 .2rem .5rem rgba(0, 0, 0, .5);
+        border: 0;
+        background-color: $rougemoyen;
+        display:inline-block;
+    }
+    .container_logo_leetchi,
+    .button{
+        margin-bottom: 2rem;
+        transition: $transition;
+    }
+    .logo_leetchi{
+        width: 20%;
+        display:inline-block;
+    }
+    .button:hover{
+        box-shadow: 0 .5rem .6rem rgba(0, 0, 0, .5);
+        background-color: lighten( $rougemoyen, 10% ) ;
+        text-decoration: none;
+    }
+    
+
+}
+
+
+
+.section_dons--sans-img{
+   
+
+    .section_dons--center{
+        text-align: center;
+    }
+    &:before{
+        content:" ";
+    }
+    .p--width{
+        width: 60%;
+        margin-left: 0 auto;
+        display:inline-block;
+    }
+}
+
+.h3--color-dark,
+.h4--color-dark{
+    color:$grismoyen;
+}
+.solde_dons{
+    font-size: 7.5rem;
+    font-family: $deadpoolfont;
+    color:$rougemoyen;
+}
+.solde_dons--color-dark{
+    color:$grismoyen;
+}
+
+
+
+
+.section_concept,
+.section_actu,
+.section_dons,
+.section_contact{
+    position:relative;
+    #concept,
+    #actu,
+    #dons,
+    #contact{
+    position:absolute;
+    top:-100px;
+}
+}
+
+.referral{
+    display:none !important;
+}
+
+
+    .contact_placement{
+        margin-left: 22rem;
+    }
+    .section_contact_img{
+        position:relative;
+        &:before{
+            content:url(../img/deadpool_sit.png);
+            bottom: -14.7rem;
+            position: absolute;
+            margin-left: 0rem; 
+        }
+    }
+
+
+// ------- FORMS ---
+.btn-primary{
+    background: $rougemoyen;
+    border: none;
+    margin-top:1rem;
+
+}
+.btn-primary:hover{
+    background:lighten( $rougemoyen, 10% ) ;
+}
+
+.btn-primary:focus{
+    background: darken( $rougemoyen, 10% ) ;
+}
+input.form-control,
+textarea.form-control{
+    border-color: $rougemoyen;
+}
+
+input.form-control:active,
+input.form-control:focus,
+textarea.form-control:active,
+textarea.form-control:focus{
+    border-color: $rougemoyen;
+}
+
+
+//-- FOOTER -- 
+footer{
+
+    background-color: $noir;
+    margin-top:10rem;
+    .container{
+        padding-top: 3rem;
+        padding-bottom: 3rem;
+        display:flex;
+        justify-content: space-between;
+        .footer_logo{
+            display:inline-block;
+        }
+        .footer_title{
+            h2{
+                color: $blanc;
+            }
+        }
+        .footer_subtitle{
+            h2{
+                color: $grissombre;
+            }
+        }
+        .footer_reseaux{
+            height: 5rem;
+            width: 100%;
+            ul{
+                display:flex;
+                justify-content: space-between;
+                margin-top:3rem;
+                li{
+                    list-style: none;
+                    display: inline-block;
+                    a{
+                        text-decoration:none;
+                        color:$blanc;
+                        transition: $transition;
+                        font-weight: bold;
+                    }
+                    a:hover{
+                        color:$rougevif;
+                    }
+                    .footer_facebook{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/fb.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_facebook:hover,
+                    .footer_facebook:focus{
+                        &:before{
+                            content:url(../img/fb_red.svg);
+                        }
+                    }
+                    .footer_twitter{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/tw.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_twitter:hover,
+                    .footer_twitter:focus{
+                        &:before{
+                            content:url(../img/tw_red.svg);
+                        }
+                    }
+                    .footer_instagram{
+                        &:before{
+                            margin:0 auto;
+                            content:url(../img/insta.svg);
+                            display:block;
+                            width:3rem;
+                            transition: $transition;
+                        }
+                    }
+                    .footer_instagram:hover,
+                    .footer_instagram:focus{
+                        &:before{
+                            content:url(../img/insta_red.svg);
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+//  ------ responsive -----
+
+
+
+@media (max-width: 992px){
+
+    footer{
+        height: 45rem;
+    }
+    .section_dons:before {
+        width: 98%;
+        overflow: hidden;
+    }
+
+}
+@media (max-width: 767px){
+    .section_contact_img:before {
+        display:none;
+    }
+    .contact_placement{
+        margin-left:0 !important;
+    }
+    .section_dons:before {
+        width: 98%;
+        overflow: hidden;
+    }
+    footer .container{
+        display: block!important;
+        text-align: center;
+    }
+    footer{
+        height: 70rem;
+    }
+    .thanks{
+        margin-top: 2rem;
+    }
+    .footer_title{
+        margin-top:3rem;
+    }
+
+    .section_concept_img{
+        width:100%;
+    }
+}
+
+
+.thanks{
+    font-family: 'Six Caps', sans-serif;
+    color:$blanc;
+    text-align: center;
+    width:100%;
+    span{
+        font-size:1.5rem;
+        color:#fff;
+    }
+    p,
+    a{
+        font-size: 3rem;
+        margin-right: 1rem;
+        margin-left: 1rem;
+        letter-spacing: 0.2rem;
+        display:inline-block;
+        
+    }
+    a{
+        color:$rougemoyen;
+    } 
+}
